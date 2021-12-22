@@ -70,4 +70,17 @@ Run ```php artisan migrate``` to setup your database migration.
 ## To Add your Ngrok link 
 
 
+Open your local server and go to this path:
+
+```http://127.0.0.1:8000/linkadd```
+
+
+
+
+
+
+
+
+
+
 
