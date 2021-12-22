@@ -21,8 +21,41 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+<h1 align="center">
+    <b>Anime converter </b> 
+<br>
+</h1>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## What is this for?
+This repository convert your normal image into anime image.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Anime
+Anime is hand-drawn and computer animation originating from Japan. In Japan and in Japanese, anime describes all animated works, regardless of style or origin. However, outside of Japan and in English, anime is colloquial for Japanese animation and refers specifically to animation produced in Japan.
+
+
+## Installation
+```pip install flask-ngrok```
+
+```pip install pyngrok```
+
+```pip install -U flask-cors```
+
+```pip install flask-ngrok```
+
+
+## Instruction
+First, set up this repository on your local machine or colab.
+Installing all dependency in your local machine or colab.
+and, authentication you ngrok token. 
+ 
+To run 
+run all the jupiter or colab cell
+
+To make changes
+at line 5 on ```ngrok authtoken "<_YOUR_NGROK_TOKEN_>"``` this is your ngrok token.
+
+To access the API.
+```<_YOUR_NGROK_LINK_>/img?img=<_YOUR_BASE64_IMAGE_>```
+
+
+
