@@ -19,7 +19,9 @@ Route::get('/',                 function () {return view('welcome');});
 Auth::routes();
 
 Route::get('/linkadd',          function () {return view('welcome');});
-Route::get('/sticker',          function () {return view('welcome');});
+Route::get('/cartoon',          function () {return view('welcome');});
+
+Route::get('/cartoonhome',            function () {return view('welcome');});
 
 Route::get('/hello/{id}',       [App\Http\Controllers\LinkaddController::class, 'view']);
 Route::post('/hello',           [App\Http\Controllers\LinkaddController::class, 'store']);
