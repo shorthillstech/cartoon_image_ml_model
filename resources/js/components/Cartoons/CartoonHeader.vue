@@ -21,7 +21,6 @@
 <script>
 export default {
   mounted() {
-    let height = this.$refs.navbar.clientHeight;
     let width = this.$refs.navbar.clientWidth;
   
     this.width = width;

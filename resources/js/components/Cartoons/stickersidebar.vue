@@ -5,15 +5,15 @@
   >
     <div class="inline-row1">
       <div
-        v-for="(val, index) in image"
+        v-for="(value, index) in image"
         :key="index"
         :class="
-          val.selected ? 'inline-col withcross' : 'inline-col withoutcross'
+          value.selected ? 'inline-col withcross' : 'inline-col withoutcross'
         "
       >
-        <span class="fontawesome" v-if="val.selected" @click="handleCross(val)"
+        <span class="fontawesome" v-if="value.selected" @click="handleCross(value)"
           ><img src="/images/times.png" /></span
-        ><img :src="val.img" class="imgsize" @click="handleImage(val)" />
+        ><img :src="value.img" class="imgsize" @click="handleImage(value)" />
       </div>
     </div>
   </div>
@@ -42,33 +42,29 @@ export default {
       ],
     };
   },
-  mounted() {
-    var x = window.matchMedia("(max-width: 750px)");
-    if (x.matches) {
-    }
-  },
+ 
   methods: {
-    CloseSticker(val) {
-      console.log("vdfkdkfldkfldkf", val);
-      if (val !== "" && val !== undefined) {
-        let ind = this.image.findIndex((vl) => vl.name == val.name);
+    CloseSticker(value) {
+    
+      if (value !== "" && value !== undefined) {
+        let index = this.image.findIndex((vl) => vl.name == val.name);
 
-        if (ind >= 0) {
-          this.image[ind].selected = false;
+        if (index >= 0) {
+          this.image[findIndex].selected = false;
         }
       }
     },
 
-    handleImage(val) {
-      let ind = this.image.findIndex((vl) => vl.name == val.name);
-      if (ind >= 0) {
-        this.image[ind].selected = true;
+    handleImage(value) {
+      let index = this.image.findIndex((vl) => vl.name == value.name);
+      if (index >= 0) {
+        this.image[index].selected = true;
       }
 
-      this.$emit("value", val);
+      this.$emit("value", value);
     },
-    handleCross(val) {
-      this.$parent.RemoveSticker(val);
+    handleCross(value) {
+      this.$parent.RemoveSticker(value);
     },
   },
 };

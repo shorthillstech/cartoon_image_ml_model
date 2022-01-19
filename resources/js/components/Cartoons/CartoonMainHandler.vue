@@ -5,7 +5,7 @@
 
       <hr :style="{ border: '1px solid #CCCCCC', margin: '0px' }" />
     </div>
-    <div>
+    <div class="maincontent">
       <cartoon />
     </div>
     <div class="mainfooter">
@@ -27,7 +27,6 @@ export default {
   },
   mounted() {
     this.route = this.$route.path;
-    console.log("fkfldkf", this.route);
   },
   components: { Cartoon, CartoonFooter, CartoonHeader },
 };
@@ -41,6 +40,17 @@ export default {
 }
 .mainfooter {
 }
+
+  .maincontent{
+    height: 85vh !important;
+  }
+  @media(max-width: 1500px)
+  {
+    .maincontent{
+      height: 90vh !important;
+    }
+  }
+
 @media (max-width: 750px) {
   .grid-container {
   }

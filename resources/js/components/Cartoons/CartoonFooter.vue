@@ -1,11 +1,11 @@
 <template>
   <div class="footer">
     <div class="row1">
-      <div class="col-md-2 col-sm-6">
+      <div class="col-md-2 col-sm-6 logosection" :style="{height:'inherit'}">
         <img src="/images/Sht-logo.png" class="img1" />
         <h6 class="txt">@2021 Shorthills Tech LLC<br />Shorthills NJ</h6>
       </div>
-      <div class="col6">
+      <div class="col6" :style="{height:'inherit'}">
         <h4 class="icon"><img src="/images/link.png" alt="" /></h4>
         <h4 class="icon"><img src="/images/face.png" alt="" /></h4>
 
@@ -70,11 +70,23 @@ export default {};
 @media (max-width: 1400px) {
   .txt {
     height: 140px;
+    font-size: 16px;
   }
+  .col6,.logosection{
+    margin-top: 10%;
+  }
+  .img1{
+    margin:0px;
+  }
+  
+ 
 }
 @media (max-width: 750px) {
   .row1 {
     padding: 18px;
+  }
+  .img1{
+    margin-top: 70px !important;
   }
   .txt {
     font-size: 12px;

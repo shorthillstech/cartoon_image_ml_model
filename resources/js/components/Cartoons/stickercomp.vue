@@ -97,24 +97,21 @@ export default {
   },
   mounted() {
     this.width = window.innerWidth;
-    let height = this.$refs.rowDiv.clientHeight;
     this.handleDivSize();
   },
   methods: {
-    handleImg(val) {
-      this.stickerdata.push(val);
+    handleImg(value) {
+      this.stickerdata.push(value);
     },
-    handleCross(vl) {
-      this.activesticker = vl;
+    handleCross(value) {
+      this.activesticker = value;
     },
     handleCancel() {
-      let vl = "off";
-      this.$emit("cancel", vl);
+      let value = "off";
+      this.$emit("cancel", value);
     },
     RemoveSticker(vl) {
-      console.log("jkfjkdfkdf", vl);
       let ind = this.stickerdata.findIndex((val) => val.name == vl.name);
-      console.log("ind", ind);
       if (ind >= 0) {
         this.stickerdata.splice(ind, 1);
         this.activesticker = " ";
@@ -123,17 +120,12 @@ export default {
       }
     },
     resizeHandler(e) {
-      console.log("kdjkdffjd", window.innerWidth);
 
       this.width = window.innerWidth;
       this.handleDivSize();
     },
     handleDivSize() {
       let width = this.width;
-      let md = this.$refs.myDiv.style.paddingLeft;
-
-      md = md.split("px");
-
       const img = new Image();
 
       img.src = "data:image/png;base64," + this.imgdata;
@@ -175,7 +167,6 @@ export default {
         useCORS: true,
         taintTest: false,
       }).then((canvas) => {
-        console.log(canvas.toDataURL());
         if (canvas.toDataURL()) {
           this.$emit("psticker", canvas.toDataURL());
         }
@@ -198,7 +189,6 @@ export default {
 }
 .main {
   border: solid 1px black;
-  /* height: 50vh; */
   max-height: 450px;
   display: flex;
   justify-content: center;

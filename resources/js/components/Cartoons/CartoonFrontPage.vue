@@ -102,7 +102,6 @@ export default {
       inputval.size = parseFloat(files.size / 1024).toFixed(2) + "kb";
 
       reader.addEventListener("load", () => {
-        // this.normalimg = reader.result;
 
         this.$router.push({
           name: "CartoonHandler",
@@ -203,8 +202,7 @@ export default {
   width: 70%;
 }
 
-.imgcol {
-}
+
 .jumbo {
   margin: 0px 0px;
   display: grid;

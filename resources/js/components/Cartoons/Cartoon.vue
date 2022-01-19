@@ -27,7 +27,7 @@
 
       <div class="row col-12 border-secondary cropper" v-if="activecrop">
         <div class="row">
-        <cropper :src="newa" @change="change" class='crop'  :style="{height:'55vh',width:'99%'}"/>
+        <cropper :src="cropperimage" @change="change" class='crop'  :style="{height:'55vh',width:'99%'}"/>
         </div>
         <div class="row mt-2">
            <div class="col-10 ml-0" v-if="activecrop">
@@ -162,7 +162,7 @@ export default {
       activecrop: false,
       cropimg: "",
       url: "",
-      newa: "",
+      cropperimage: "",
       inputval:{name:'',size:''},
     };
   },
@@ -181,7 +181,7 @@ export default {
       {
         this.normalimg=this.$route.params.val;
         this.startstatus=true;
-        this.newa=this.normalimg;
+        this.cropperimage=this.normalimg;
         this.imageuploaded=true;
          this.handleCrop();
         if(this.$route.params.inputval)
@@ -222,7 +222,7 @@ export default {
       axios
         .get(this.url + "/img?img=" + this.normalimg.split(",")[1])
         .then((response) => {
-          console.log(response);
+        
           if (response.status == 201 || response.status == 200) {
             this.data = response.data;
             this.loader = false;
@@ -232,6 +232,8 @@ export default {
             link.setAttribute("href", "data:image/png;base64," + response.data);
           }
         });
+     
+
 
     },
     handleStickerValue(val) {
@@ -247,13 +249,11 @@ export default {
         this.stickerpanel = false;
         this.imageuploaded=true;
 
-
       }else
       {
       this.stickerpanel = true;
        this.activecrop= false;
       this.imageuploaded=false;
-
 
       }
      
@@ -290,7 +290,7 @@ export default {
         this.normalimg = reader.result;
         this.imageuploaded=true;
   
-        this.newa = this.normalimg;
+        this.cropperimage = this.normalimg;
         this.handleCrop();
       });
     },
@@ -519,9 +519,7 @@ background-color: rgba(245,245,245,0.5);; /* Black w/ opacity */
 .main_head {
   font-size: 55px;
 }
-.btnstk {
-  float: right;
-}
+
 .br {
   outline: none;
 }

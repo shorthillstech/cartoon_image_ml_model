@@ -32,8 +32,6 @@ export default {
   grid-template-columns: repeat(1, fr);
 }
 
-.mainfooter {
-}
 @media (max-width: 991px) {
   .grid-container {
   }
