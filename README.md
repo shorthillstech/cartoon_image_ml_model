@@ -75,6 +75,13 @@ Open your local server and go to this path:
 ```http://127.0.0.1:8000/linkadd```
 
 
+## Demo Video
+
+<video width="320" height="240" controls>
+  <source src="./demo/Laravel.mp4" type="video/mp4">
+ 
+</video>
+
 
 
 
