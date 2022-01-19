@@ -78,7 +78,7 @@ Open your local server and go to this path:
 ## Demo Video
 
 <video width="320" height="240" controls>
-  <source src="./demo/Laravel.mp4" type="video/mp4">
+  <source src="/demo/Laravel.mp4" type="video/mp4">
  
 </video>
 
