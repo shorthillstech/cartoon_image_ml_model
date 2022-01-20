@@ -21661,7 +21661,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Josefin+Sans&family=Lexend+Deca&family=Livvic:wght@500&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.row1[data-v-20eaed6a] {\n  display: inline-flex;\n  justify-content: space-around;\n  font-family: \"Montserrat\", sans-serif;\n\n  align-items: center;\n  width: 100%;\n}\n.img1[data-v-20eaed6a] {\n  margin: 18px 0px;\n}\n.col6[data-v-20eaed6a] {\n  width: 50%;\n  display: inline-flex;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: flex-end;\n}\n.icon[data-v-20eaed6a] {\n  font-size: 35px;\n  color: white;\n  margin: 0px 10px;\n}\n.col2[data-v-20eaed6a] {\n  width: 20%;\n  justify-content: center;\n  align-items: center;\n}\n.txt[data-v-20eaed6a] {\n  margin-top: 18px;\n  font-size: 18px;\n}\n.footer[data-v-20eaed6a] {\n  display: flex;\n  justify-content: center;\n  height: 176px;\n  margin: 0px;\n  align-items: center;\n  font-family: \"Montserrat\", sans-serif;\n  width: 100%;\n  background: #1e242e;\n  color: white;\n}\n@media (max-width: 1400px) {\n.txt[data-v-20eaed6a] {\n    height: 140px;\n    font-size: 16px;\n}\n.col6[data-v-20eaed6a],.logosection[data-v-20eaed6a]{\n    margin-top: 10%;\n}\n.img1[data-v-20eaed6a]{\n    margin:0px;\n}\n}\n@media (max-width: 750px) {\n.row1[data-v-20eaed6a] {\n    padding: 18px;\n}\n.img1[data-v-20eaed6a]{\n    margin-top: 70px !important;\n}\n.txt[data-v-20eaed6a] {\n    font-size: 12px;\n}\n.icon[data-v-20eaed6a] {\n    font-size: 20px;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.row1[data-v-20eaed6a] {\n  display: inline-flex;\n  justify-content: space-around;\n  font-family: \"Montserrat\", sans-serif;\n\n  align-items: center;\n  width: 100%;\n}\n.img1[data-v-20eaed6a] {\n  margin: 18px 0px;\n}\n.col6[data-v-20eaed6a] {\n  width: 50%;\n  display: inline-flex;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: flex-end;\n}\n.icon[data-v-20eaed6a] {\n  font-size: 35px;\n  color: white;\n  margin: 0px 10px;\n}\n.col2[data-v-20eaed6a] {\n  width: 20%;\n  justify-content: center;\n  align-items: center;\n}\n.txt[data-v-20eaed6a] {\n  margin-top: 18px;\n  font-size: 18px;\n}\n.footer[data-v-20eaed6a] {\n  display: flex;\n  justify-content: center;\n  height: 176px;\n  margin: 0px;\n  align-items: center;\n  font-family: \"Montserrat\", sans-serif;\n  width: 100%;\n  background: #1e242e;\n  color: white;\n}\n@media (max-width: 1400px) {\n.txt[data-v-20eaed6a] {\n    height: 140px;\n    font-size: 16px;\n}\n.col6[data-v-20eaed6a],.logosection[data-v-20eaed6a]{\n    margin-top: 10%;\n}\n.img1[data-v-20eaed6a]{\n    margin:0px;\n}\n}\n@media (max-width: 750px) {\n.row1[data-v-20eaed6a] {\n    padding: 18px;\n    height: 140px;\n}\n.footer[data-v-20eaed6a]{\n    height: 140px;\n}\n.txt[data-v-20eaed6a] {\n    font-size: 12px;\n}\n.icon[data-v-20eaed6a] {\n    font-size: 20px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -21685,7 +21685,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.grid-container[data-v-19898070] {\n  display: grid;\n\n  grid-template-columns: repeat(1, fr);\n}\n@media (max-width: 991px) {\n.grid-container[data-v-19898070] {\n}\n.mainfooter[data-v-19898070] {\n    position: fixed;\n    width: 100vw;\n    bottom: 0;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.grid-container[data-v-19898070] {\n  display: grid;\n\n  grid-template-columns: repeat(1, fr);\n}\n@media (max-width: 991px) {\n.grid-container[data-v-19898070] {\n}\n.maincontent[data-v-19898070]{\n    margin-bottom: 145px;\n}\n.mainfooter[data-v-19898070] {\n    position: fixed;\n    width: 100vw;\n    bottom: 0;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -49836,7 +49836,7 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "grid-container" }, [
-    _c("div", [_c("cartoon-front-page")], 1),
+    _c("div", { staticClass: "maincontent" }, [_c("cartoon-front-page")], 1),
     _vm._v(" "),
     _c("div", { staticClass: "mainfooter" }, [_c("cartoon-footer")], 1),
   ])

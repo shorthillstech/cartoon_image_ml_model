@@ -84,10 +84,12 @@ export default {};
 @media (max-width: 750px) {
   .row1 {
     padding: 18px;
+    height: 140px;
   }
-  .img1{
-    margin-top: 70px !important;
+  .footer{
+    height: 140px;
   }
+
   .txt {
     font-size: 12px;
   }

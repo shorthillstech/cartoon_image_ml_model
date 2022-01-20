@@ -1,6 +1,6 @@
 <template>
   <div class="grid-container">
-    <div>
+    <div class="maincontent">
       <cartoon-front-page />
     </div>
     <div class="mainfooter">
@@ -34,6 +34,9 @@ export default {
 
 @media (max-width: 991px) {
   .grid-container {
+  }
+  .maincontent{
+    margin-bottom: 145px;
   }
   .mainfooter {
     position: fixed;
