@@ -27,9 +27,7 @@ You can use the CartoonAPI file in your Colab setup
 
 
 ## Instruction
-First, set up this repository on your local machine or colab.
-Installing all dependency in your local machine or colab.
-and, authentication you ngrok token. 
+First, set up this repository on your local machine or colab. Installing all dependency in your Machine and authentication your ngrok token.
  
 To run 
 run all the jupiter or colab cell
