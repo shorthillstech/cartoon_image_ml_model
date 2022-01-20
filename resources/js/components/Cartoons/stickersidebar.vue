@@ -47,10 +47,10 @@ export default {
     CloseSticker(value) {
     
       if (value !== "" && value !== undefined) {
-        let index = this.image.findIndex((vl) => vl.name == val.name);
+        let index = this.image.findIndex((vl) => vl.name == value.name);
 
         if (index >= 0) {
-          this.image[findIndex].selected = false;
+          this.image[index].selected = false;
         }
       }
     },
@@ -61,7 +61,7 @@ export default {
         this.image[index].selected = true;
       }
 
-      this.$emit("value", value);
+      this.$emit("stickervalue", value);
     },
     handleCross(value) {
       this.$parent.RemoveSticker(value);

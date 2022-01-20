@@ -16161,16 +16161,16 @@ __webpack_require__.r(__webpack_exports__);
       var value = "off";
       this.$emit("cancel", value);
     },
-    RemoveSticker: function RemoveSticker(vl) {
-      var ind = this.stickerdata.findIndex(function (val) {
-        return val.name == vl.name;
+    RemoveSticker: function RemoveSticker(value) {
+      var ind = this.stickerdata.findIndex(function (obj) {
+        return obj.name == value.name;
       });
 
       if (ind >= 0) {
         this.stickerdata.splice(ind, 1);
         this.activesticker = " ";
-        this.stickerremoved = vl;
-        this.$refs.stickercomp.CloseSticker(vl);
+        this.stickerremoved = value;
+        this.$refs.stickercomp.CloseSticker(value);
       }
     },
     resizeHandler: function resizeHandler(e) {
@@ -16308,11 +16308,11 @@ __webpack_require__.r(__webpack_exports__);
     CloseSticker: function CloseSticker(value) {
       if (value !== "" && value !== undefined) {
         var index = this.image.findIndex(function (vl) {
-          return vl.name == val.name;
+          return vl.name == value.name;
         });
 
         if (index >= 0) {
-          this.image[findIndex].selected = false;
+          this.image[index].selected = false;
         }
       }
     },
@@ -16325,7 +16325,7 @@ __webpack_require__.r(__webpack_exports__);
         this.image[index].selected = true;
       }
 
-      this.$emit("value", value);
+      this.$emit("stickervalue", value);
     },
     handleCross: function handleCross(value) {
       this.$parent.RemoveSticker(value);
@@ -21661,7 +21661,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Josefin+Sans&family=Lexend+Deca&family=Livvic:wght@500&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.row1[data-v-20eaed6a] {\n  display: inline-flex;\n  justify-content: space-around;\n  font-family: \"Montserrat\", sans-serif;\n\n  align-items: center;\n  width: 100%;\n}\n.img1[data-v-20eaed6a] {\n  margin: 18px 0px;\n}\n.col6[data-v-20eaed6a] {\n  width: 50%;\n  display: inline-flex;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: flex-end;\n}\n.icon[data-v-20eaed6a] {\n  font-size: 35px;\n  color: white;\n  margin: 0px 10px;\n}\n.col2[data-v-20eaed6a] {\n  width: 20%;\n  justify-content: center;\n  align-items: center;\n}\n.txt[data-v-20eaed6a] {\n  margin-top: 18px;\n  font-size: 18px;\n}\n.footer[data-v-20eaed6a] {\n  display: flex;\n  justify-content: center;\n  height: 176px;\n  margin: 0px;\n  align-items: center;\n  font-family: \"Montserrat\", sans-serif;\n  width: 100%;\n  background: #1e242e;\n  color: white;\n}\n@media (max-width: 1400px) {\n.txt[data-v-20eaed6a] {\n    height: 140px;\n    font-size: 16px;\n}\n.col6[data-v-20eaed6a],.logosection[data-v-20eaed6a]{\n    margin-top: 10%;\n}\n.img1[data-v-20eaed6a]{\n    margin:0px;\n}\n}\n@media (max-width: 750px) {\n.row1[data-v-20eaed6a] {\n    padding: 18px;\n    height: 140px;\n}\n.footer[data-v-20eaed6a]{\n    height: 140px;\n}\n.txt[data-v-20eaed6a] {\n    font-size: 12px;\n}\n.icon[data-v-20eaed6a] {\n    font-size: 20px;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.row1[data-v-20eaed6a] {\n  display: inline-flex;\n  justify-content: space-around;\n  font-family: \"Montserrat\", sans-serif;\n\n  align-items: center;\n  width: 100%;\n}\n.img1[data-v-20eaed6a] {\n  margin: 18px 0px;\n}\n.col6[data-v-20eaed6a] {\n  width: 50%;\n  display: inline-flex;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: flex-end;\n}\n.icon[data-v-20eaed6a] {\n  font-size: 35px;\n  color: white;\n  margin: 0px 10px;\n}\n.col2[data-v-20eaed6a] {\n  width: 20%;\n  justify-content: center;\n  align-items: center;\n}\n.txt[data-v-20eaed6a] {\n  margin-top: 18px;\n  font-size: 18px;\n}\n.footer[data-v-20eaed6a] {\n  display: flex;\n  justify-content: center;\n  height: 176px;\n  margin: 0px;\n  align-items: center;\n  font-family: \"Montserrat\", sans-serif;\n  width: 100%;\n  background: #1e242e;\n  color: white;\n}\n@media (max-width: 1400px) {\n.txt[data-v-20eaed6a] {\n    height: 30px;\n    font-size: 16px;\n}\n.img1[data-v-20eaed6a]{\n    margin:0px;\n}\n}\n@media (max-width: 750px) {\n.row1[data-v-20eaed6a] {\n    padding: 18px;\n    height: 140px;\n}\n.footer[data-v-20eaed6a]{\n    height: 140px;\n}\n.txt[data-v-20eaed6a] {\n    font-size: 12px;\n}\n.icon[data-v-20eaed6a] {\n    font-size: 20px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -49932,8 +49932,6 @@ var render = function () {
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "footer-section" }, [
-        _c("div", { staticClass: "bottomimg" }),
-        _vm._v(" "),
         _c("h4", [_vm._v("Go From Photo To Cartoon")]),
         _vm._v(" "),
         _c("div", { staticClass: "btnrow" }, [
@@ -50172,7 +50170,7 @@ var render = function () {
                 _c("stickersidebar", {
                   ref: "stickercomp",
                   attrs: { imageval: _vm.rowvalue },
-                  on: { value: _vm.handleImg },
+                  on: { stickervalue: _vm.handleImg },
                 }),
               ],
               1

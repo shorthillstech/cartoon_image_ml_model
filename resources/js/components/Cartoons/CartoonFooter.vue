@@ -69,12 +69,10 @@ export default {};
 }
 @media (max-width: 1400px) {
   .txt {
-    height: 140px;
+    height: 30px;
     font-size: 16px;
   }
-  .col6,.logosection{
-    margin-top: 10%;
-  }
+  
   .img1{
     margin:0px;
   }

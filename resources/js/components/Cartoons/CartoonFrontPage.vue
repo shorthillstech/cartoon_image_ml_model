@@ -60,7 +60,7 @@
         </div>
       </div>
       <div class="footer-section">
-        <div class="bottomimg"></div>
+        <!-- <div class="bottomimg"></div> -->
         <h4>Go From Photo To Cartoon</h4>
         <div class="btnrow">
           <button class="newupload">

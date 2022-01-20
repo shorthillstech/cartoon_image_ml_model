@@ -38,7 +38,7 @@
         :style="{ marginBottom: '0px', marginLeft: '5px' }"
       >
         <stickersidebar
-          @value="handleImg"
+          @stickervalue="handleImg"
           ref="stickercomp"
           :imageval="rowvalue"
         />
@@ -110,17 +110,17 @@ export default {
       let value = "off";
       this.$emit("cancel", value);
     },
-    RemoveSticker(vl) {
-      let ind = this.stickerdata.findIndex((val) => val.name == vl.name);
+    RemoveSticker(value) {
+      
+      let ind = this.stickerdata.findIndex((obj) => obj.name == value.name);
       if (ind >= 0) {
         this.stickerdata.splice(ind, 1);
         this.activesticker = " ";
-        this.stickerremoved = vl;
-        this.$refs.stickercomp.CloseSticker(vl);
+        this.stickerremoved = value;
+        this.$refs.stickercomp.CloseSticker(value);
       }
     },
     resizeHandler(e) {
-
       this.width = window.innerWidth;
       this.handleDivSize();
     },

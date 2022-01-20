@@ -35,6 +35,7 @@ export default {
 @media (max-width: 991px) {
   .grid-container {
   }
+
   .maincontent{
     margin-bottom: 145px;
   }
