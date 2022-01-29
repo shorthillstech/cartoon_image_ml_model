@@ -25,12 +25,13 @@
         <div class="inline-flex maincol1">
           <h1 class="">Best App To Turn Your Photo Into Cartoon</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-            vero? Obcaecati sapiente suscipit dolorem distinctio quia deserunt
-            nemo, ipsum, deleniti, qui voluptate quisquam quibusdam fugit!
-            Recusandae perferendis illo officiis minima eligendi aperiam qui
-            harum, accusantium, eveniet, id minus itaque magni.
+       
+            Let us have fun with our images. Take any photograph or picture of
+            your friends or family, convert them into a cartoon and share the
+            fun. You can also add Goggles and fun stickers to make your cartoons
+            even more fun. The system works best with full face photographs.
           </p>
+         
         </div>
         <div class="inline-flex maincol2">
           <img src="/images/sideimg.png" class="img" alt="" />

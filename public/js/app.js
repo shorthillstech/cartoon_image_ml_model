@@ -15651,7 +15651,9 @@ __webpack_require__.r(__webpack_exports__);
       var _this2 = this;
 
       this.loader = true;
-      axios.get(this.url + "/img?img=" + this.normalimg.split(",")[1]).then(function (response) {
+      axios.post(this.url + "/img", {
+        "img": this.normalimg.split(",")[1]
+      }).then(function (response) {
         if (response.status == 201 || response.status == 200) {
           _this2.data = response.data;
           _this2.loader = false;
@@ -15807,6 +15809,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _CartoonHeader_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CartoonHeader.vue */ "./resources/js/components/Cartoons/CartoonHeader.vue");
+//
 //
 //
 //
@@ -49968,7 +49971,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("p", [
           _vm._v(
-            "\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,\n          vero? Obcaecati sapiente suscipit dolorem distinctio quia deserunt\n          nemo, ipsum, deleniti, qui voluptate quisquam quibusdam fugit!\n          Recusandae perferendis illo officiis minima eligendi aperiam qui\n          harum, accusantium, eveniet, id minus itaque magni.\n        "
+            "\n     \n          Let us have fun with our images. Take any photograph or picture of\n          your friends or family, convert them into a cartoon and share the\n          fun. You can also add Goggles and fun stickers to make your cartoons\n          even more fun. The system works best with full face photographs.\n        "
           ),
         ]),
       ]),

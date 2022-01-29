@@ -219,8 +219,8 @@ export default {
     },
     processImage() {
       this.loader = true;
-      axios
-        .get(this.url + "/img?img=" + this.normalimg.split(",")[1])
+     axios
+        .post(this.url + "/img", {"img":this.normalimg.split(",")[1]})
         .then((response) => {
         
           if (response.status == 201 || response.status == 200) {
