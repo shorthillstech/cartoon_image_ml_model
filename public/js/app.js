@@ -15955,13 +15955,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {
     var width = this.$refs.navbar.clientWidth;
@@ -15974,8 +15967,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       smallscreen: true,
-      width: "",
-      route: route
+      width: ""
     };
   },
   methods: {
@@ -21737,7 +21729,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.row1[data-v-421d515c] {\n  display: inline-flex;\n  justify-content: center;\n  padding: 10px;\n\n  align-items: center;\n  width: 100%;\n}\n.signup[data-v-421d515c] {\n  background: #51c1cd;\n  color: white;\n}\n.btn[data-v-421d515c] {\n  padding: 5px 35px;\n  margin: 0px 5px;\n  border: 1px solid lightgray;\n  border-radius: 5px;\n}\n.col6[data-v-421d515c] {\n  width: 50%;\n  display: inline-flex;\n  align-items: center;\n  justify-content: flex-end;\n}\n.col10[data-v-421d515c]{\n  width: 100%;\n}\n.col8[data-v-421d515c] {\n  width: 70%;\n  justify-content: center;\n  align-items: center;\n}\n.col2[data-v-421d515c] {\n  display: inline-flex;\n  width: 30%;\n  margin-right: 85%;\n  justify-content: flex-start;\n  align-items: center;\n}\n.logotxt[data-v-421d515c] {\n  margin-top: 10px;\n}\n.header[data-v-421d515c] {\n  display: flex;\n  justify-content: flex-end;\n  flex-wrap: wrap;\n  padding: 4px 10%;\n  height: 73px;\n  align-items: center;\n  width: 100%;\n  background: white;\n}\n@media (max-width: 750px) {\n.col2[data-v-421d515c]{\n   justify-content:flex-start;\n   width:2%;\n   margin-right: 100%;\n}\n.header[data-v-421d515c]{\n   padding:4px 0px;\n}\n.col2 > .logotxt[data-v-421d515c], img[data-v-421d515c]{\nmargin-top: 0px;\nmargin-left: 0px;\nmargin-right: 0px;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.row1[data-v-421d515c] {\n  display: inline-flex;\n  justify-content: center;\n  padding: 10px;\n\n  align-items: center;\n  width: 100%;\n}\n.signup[data-v-421d515c] {\n  background: #51c1cd;\n  color: white;\n}\n.btn[data-v-421d515c] {\n  padding: 5px 35px;\n  margin: 0px 5px;\n  border: 1px solid lightgray;\n  border-radius: 5px;\n}\n.col6[data-v-421d515c] {\n  width: 50%;\n  display: inline-flex;\n  align-items: center;\n  justify-content: flex-end;\n}\n.col10[data-v-421d515c] {\n  width: 100%;\n}\n.col8[data-v-421d515c] {\n  width: 70%;\n  justify-content: center;\n  align-items: center;\n}\n.col2[data-v-421d515c] {\n  display: inline-flex;\n  width: 30%;\n  margin-right: 85%;\n  justify-content: flex-start;\n  align-items: center;\n}\n.logotxt[data-v-421d515c] {\n  margin-top: 10px;\n}\n.header[data-v-421d515c] {\n  display: flex;\n  justify-content: flex-end;\n  flex-wrap: wrap;\n  padding: 4px 10%;\n  height: 73px;\n  align-items: center;\n  width: 100%;\n  background: white;\n}\n@media (max-width: 750px) {\n.col2[data-v-421d515c] {\n    justify-content: flex-start;\n    width: 2%;\n    margin-right: 100%;\n}\n.header[data-v-421d515c] {\n    padding: 4px 0px;\n}\n.col2 > .logotxt[data-v-421d515c],\n  img[data-v-421d515c] {\n    \n    margin-left: 25px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -50011,22 +50003,9 @@ var render = function () {
     _c("div", { staticClass: "col2" }, [
       _c("img", {
         staticClass: "img",
-        style: { height: "80px" },
-        attrs: {
-          src: "https://media.glassdoor.com/sqll/2479624/shorthills-tech-squarelogo-1630401647841.png",
-        },
+        style: { height: "53px" },
+        attrs: { src: "/images/logo1.png" },
       }),
-      _vm._v(",\n    "),
-      _c("h4", { staticClass: "logotxt" }, [
-        _c("span"),
-        _c("span", { style: { color: "#51C1CD", fontWeight: "600" } }, [
-          _vm._v("Short"),
-        ]),
-        _vm._v("Hills"),
-        _c("br"),
-        _vm._v(" "),
-        _c("h6", [_vm._v("T E C H")]),
-      ]),
     ]),
   ])
 }

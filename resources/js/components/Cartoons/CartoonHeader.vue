@@ -2,19 +2,12 @@
   <div class="header" ref="navbar">
     <div class="col2">
       <img
-        src="https://media.glassdoor.com/sqll/2479624/shorthills-tech-squarelogo-1630401647841.png"
+        src="/images/logo1.png"
         class="img"
-        :style="{ height: '80px' }"
-      />,
-      <h4 class="logotxt">
-        <span></span
-        ><span :style="{ color: '#51C1CD', fontWeight: '600' }">Short</span
-        >Hills<br />
-        <h6>T E C H</h6>
-      </h4>
-    </div>
-   
+        :style="{ height: '53px' }"
+      />
     
+    </div>
   </div>
 </template>
 
@@ -22,7 +15,7 @@
 export default {
   mounted() {
     let width = this.$refs.navbar.clientWidth;
-  
+
     this.width = width;
 
     if (width <= 750) {
@@ -33,7 +26,6 @@ export default {
     return {
       smallscreen: true,
       width: "",
-      route,
     };
   },
   methods: {
@@ -70,7 +62,7 @@ export default {
   align-items: center;
   justify-content: flex-end;
 }
-.col10{
+.col10 {
   width: 100%;
 }
 .col8 {
@@ -99,19 +91,18 @@ export default {
   background: white;
 }
 @media (max-width: 750px) {
- .col2{
-   justify-content:flex-start;
-   width:2%;
-   margin-right: 100%;
- }
- .header{
-   padding:4px 0px;
- }
- .col2 > .logotxt , img{
-margin-top: 0px;
-margin-left: 0px;
-margin-right: 0px;
- }
- 
+  .col2 {
+    justify-content: flex-start;
+    width: 2%;
+    margin-right: 100%;
+  }
+  .header {
+    padding: 4px 0px;
+  }
+  .col2 > .logotxt,
+  img {
+    
+    margin-left: 25px;
+  }
 }
 </style>
