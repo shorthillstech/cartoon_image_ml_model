@@ -7,14 +7,25 @@
 ## What is this for?
 This repository convert your normal image into anime image.
 
+
 ## Anime
 Anime is hand-drawn and computer animation originating from Japan. In Japan and in Japanese, anime describes all animated works, regardless of style or origin. However, outside of Japan and in English, anime is colloquial for Japanese animation and refers specifically to animation produced in Japan.
+
+
+## Links to references
+
+HuggingFace
+
+https://huggingface.co/spaces/akhaliq/AnimeGANv2
+
 
 ## File Path
 Here is the file path for Cartoon ML Model.
 ```/CartoonAPI/CartoonAPI.ipynb```
 
 You can use the CartoonAPI file in your Colab setup
+
+
 
 ## Colab Cartoon API dependencies Installation
 ```pip install flask-ngrok```
@@ -37,6 +48,7 @@ at line 5 on ```ngrok authtoken "<_YOUR_NGROK_TOKEN_>"``` this is your ngrok tok
 
 To access the API.
 ```<_YOUR_NGROK_LINK_>/img?img=<_YOUR_BASE64_IMAGE_>```
+
 
 
 ## Laravel and Vue Installation
