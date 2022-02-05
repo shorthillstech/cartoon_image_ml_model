@@ -15581,7 +15581,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 
 
@@ -49455,7 +49454,6 @@ var render = function () {
                   _vm._v("Share. Explore. Love"),
                 ])
               : _vm._e(),
-            _vm._v("\n     >\n\n      "),
           ]
         ),
       ]),

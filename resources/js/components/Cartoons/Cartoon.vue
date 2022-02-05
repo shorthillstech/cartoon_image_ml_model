@@ -8,7 +8,6 @@
             <p :class="data && !stickerpanel? 'headtxt htxt':'headtxt'">{{data && !stickerpanel?'Your Artwork is Ready!':stickerpanel?'Add Trending Stickers to Your Photo':'Turn Your Photos Into Cartoon'}}</p>
             <hr v-if="data && !stickerpanel" class="hr"/>
             <h3 class="bottomheadtxt" v-if="data && !stickerpanel">Share. Explore. Love</h3>
-       >
 
         </div>
       </div>
