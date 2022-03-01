@@ -27,7 +27,7 @@
             :aspectRatio="true"
           >
             <div :style="{ display: 'inline-block' }">
-              <img :src="data.img" :style="{ width: '100%', height: '100%' }" />
+              <img :src="data.img" :style="{ width: '100%', height: 'auto' }" />
             </div>
           </drr>
         </div>

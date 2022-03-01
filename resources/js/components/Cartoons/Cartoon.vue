@@ -404,7 +404,7 @@ border: 1px solid #575757;
 border-radius: 4px;
 }
 .card-img-top{
-  width: 100% !important ;
+  width: auto !important ;
   height: 100% !important;
 }
 

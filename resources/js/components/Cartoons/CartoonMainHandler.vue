@@ -2,7 +2,6 @@
   <div class="grid-container">
     <div>
       <cartoon-header />
-
       <hr :style="{ border: '1px solid #CCCCCC', margin: '0px' }" />
     </div>
     <div class="maincontent">
@@ -42,12 +41,12 @@ export default {
 }
 
   .maincontent{
-    height: 85vh !important;
+    min-height: 85vh !important;
   }
   @media(max-width: 1500px)
   {
     .maincontent{
-      height: 90vh !important;
+      min-height: 90vh !important;
     }
   }
 
